@@ -45,7 +45,9 @@ theme_config = ThemeType.CHALK   # 可选 CHALK / DARK / ESSOS / PURPLE_PASSION 
 | **ESSOS** | **PURPLE-PASSION** |
 | [![ESSOS 主题效果](screenshot/theme-essos.png?v=2)](screenshot/theme-essos.png?v=2) | [![PURPLE-PASSION 主题效果](screenshot/theme-purple-passion.png?v=2)](screenshot/theme-purple-passion.png?v=2) |
 | **ROMANTIC** | |
-| [![ROMANTIC 主题效果](screenshot/theme-romantic.png?v=2)](screenshot/theme-romantic.png?v=2) | 主题色板由 ECharts theme 定义，完整可选值见 `pyecharts.globals.ThemeType` |
+| [![ROMANTIC 主题效果](screenshot/theme-romantic.png?v=2)](screenshot/theme-romantic.png?v=2) | |
+
+主题色板由 ECharts theme 定义，完整可选值见 `pyecharts.globals.ThemeType`。
 
 各主题的主色板（数值为运行时从 `chart.getOption()` 实际读取）：
 
