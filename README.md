@@ -41,11 +41,11 @@ theme_config = ThemeType.CHALK   # 可选 CHALK / DARK / ESSOS / PURPLE_PASSION 
 
 | CHALK（脚本默认） | DARK |
 |:---:|:---:|
-| [![CHALK 主题效果](screenshot/theme-chalk.png)](screenshot/theme-chalk.png) | [![DARK 主题效果](screenshot/theme-dark.png)](screenshot/theme-dark.png) |
+| [![CHALK 主题效果](screenshot/theme-chalk.png?v=2)](screenshot/theme-chalk.png?v=2) | [![DARK 主题效果](screenshot/theme-dark.png?v=2)](screenshot/theme-dark.png?v=2) |
 | **ESSOS** | **PURPLE-PASSION** |
-| [![ESSOS 主题效果](screenshot/theme-essos.png)](screenshot/theme-essos.png) | [![PURPLE-PASSION 主题效果](screenshot/theme-purple-passion.png)](screenshot/theme-purple-passion.png) |
+| [![ESSOS 主题效果](screenshot/theme-essos.png?v=2)](screenshot/theme-essos.png?v=2) | [![PURPLE-PASSION 主题效果](screenshot/theme-purple-passion.png?v=2)](screenshot/theme-purple-passion.png?v=2) |
 | **ROMANTIC** | |
-| [![ROMANTIC 主题效果](screenshot/theme-romantic.png)](screenshot/theme-romantic.png) | 主题色板由 ECharts theme 定义，完整可选值见 `pyecharts.globals.ThemeType` |
+| [![ROMANTIC 主题效果](screenshot/theme-romantic.png?v=2)](screenshot/theme-romantic.png?v=2) | 主题色板由 ECharts theme 定义，完整可选值见 `pyecharts.globals.ThemeType` |
 
 各主题的主色板（数值为运行时从 `chart.getOption()` 实际读取）：
 
