@@ -334,7 +334,7 @@ theme_config = ThemeType.CHALK   # 换成 DARK / ESSOS / PURPLE_PASSION / ROMANT
 
 **我是马哥python说，一名 10 年程序猿，专注 python 开发，持续分享 python 源码干货中。**
 
-- 公众号：**老男孩的平凡之路**
+- 公众号：[老男孩的平凡之路](https://github.com/mashukui/mashukui/blob/main/wechat2.png)
 - GitHub：[@mashukui](https://github.com/mashukui)
 
 > 原创不易，如果本项目对你有帮助，欢迎 **Star ⭐** 支持一下。
