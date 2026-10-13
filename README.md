@@ -332,14 +332,14 @@ theme_config = ThemeType.CHALK   # 换成 DARK / ESSOS / PURPLE_PASSION / ROMANT
 
 ## 👨‍💻 关于作者
 
-**我是马哥python说，一名 10 年程序猿，专注 python 开发，持续分享 python 源码干货中。**
+**我是马哥python说，一名10年+程序猿，专注python开发，持续分享python源码干货中。**
 
 - 公众号：[老男孩的平凡之路](https://github.com/mashukui/mashukui/blob/main/wechat2.png)
 - GitHub：[@mashukui](https://github.com/mashukui)
 
 > 原创不易，如果本项目对你有帮助，欢迎 **Star ⭐** 支持一下。
 
-**原创声明**：本项目代码由 马哥python说 原创，禁止二次售卖；转载请注明出处。
+**原创声明**：本项目代码由`马哥python说`原创，禁止二次售卖；转载请注明出处。
 
 ---
 
