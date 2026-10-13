@@ -29,6 +29,40 @@
 
 ---
 
+## 🎨 多主题效果
+
+pyecharts 内置多套配色主题，切换整套大屏配色只需改 `2_生成临时大屏.py` 顶部的一行：
+
+```python
+theme_config = ThemeType.CHALK   # 可选 CHALK / DARK / ESSOS / PURPLE_PASSION / ROMANTIC ...
+```
+
+下图是**同一份数据**在 5 种主题下的实际渲染效果（点击图片可查看大图）：
+
+| CHALK（脚本默认） | DARK |
+|:---:|:---:|
+| [![CHALK 主题效果](screenshot/theme-chalk.png)](screenshot/theme-chalk.png) | [![DARK 主题效果](screenshot/theme-dark.png)](screenshot/theme-dark.png) |
+| **ESSOS** | **PURPLE-PASSION** |
+| [![ESSOS 主题效果](screenshot/theme-essos.png)](screenshot/theme-essos.png) | [![PURPLE-PASSION 主题效果](screenshot/theme-purple-passion.png)](screenshot/theme-purple-passion.png) |
+| **ROMANTIC** | |
+| [![ROMANTIC 主题效果](screenshot/theme-romantic.png)](screenshot/theme-romantic.png) | 主题色板由 ECharts theme 定义，完整可选值见 `pyecharts.globals.ThemeType` |
+
+各主题的主色板（数值为运行时从 `chart.getOption()` 实际读取）：
+
+| 主题 | 背景色 | 主色板 |
+|---|---|---|
+| `CHALK` | `rgba(41,52,65,1)` | `#fc97af` `#87f7cf` `#f7f494` `#72ccff` `#f7c5a0` … |
+| `DARK` | `#100C2A` | `#4992ff` `#7cffb2` `#fddd60` `#ff6e76` `#58d9f9` … |
+| `ESSOS` | `rgba(242,234,191,0.15)` | `#893448` `#d95850` `#eb8146` `#ffb248` `#f2d643` … |
+| `PURPLE_PASSION` | `rgba(91,92,110,1)` | `#9b8bba` `#e098c7` `#8fd3e8` `#71669e` `#cc70af` … |
+| `ROMANTIC` | `#f0e8cd` | `#fb2831` `#fd948c` `#f1d1d2` `#8fcbf0` `#c4e7f7` … |
+
+> `DARK` 是 ECharts **内置主题**，不额外请求资源；其余 4 套需联网加载对应的 `themes/*.js`。
+>
+> 📌 上述 5 张效果图取自 2022 年初版成品（榜单数据与版式为当时的快照），**主题配色与当前脚本一致**。上方的[大屏效果](#-大屏效果)则是当前版式 + 最新数据，用的正是脚本默认的 `CHALK` 主题。
+
+---
+
 ## ⚙️ 功能概览
 
 | 模块 | 说明 |
@@ -95,7 +129,8 @@ douban_bigscreen/
 ├── 大屏_最终.html                   # 成品：最终大屏（浏览器直接打开）
 ├── index.html                       # GitHub Pages 入口（内容同大屏）
 ├── screenshot/
-│   └── dashboard.png                # README 效果图
+│   ├── dashboard.png                # README 效果图（当前版式 + 最新数据）
+│   └── theme-*.png                  # README 主题效果图（5 种主题配色）
 ├── 基于Python的豆瓣电影舆情分析系统 可视化大屏设计方案.xmind   # 设计稿
 ├── 思维导图2.png                    # 设计稿导出图
 ├── requirements.txt
@@ -267,6 +302,20 @@ python 3_生成最终大屏.py
 <summary><b>6. 词云里出现大量无意义符号？</b></summary>
 
 停用词表 `hit_stopwords.txt` 已内置 767 条中英文停用词。如需定制，直接往该文件追加你自己的停用词即可。
+</details>
+
+<details>
+<summary><b>7. 怎么切换大屏的配色主题？</b></summary>
+
+改 `2_生成临时大屏.py` 顶部的 `theme_config`，然后重跑步骤 2、3 即可：
+
+```python
+theme_config = ThemeType.CHALK   # 换成 DARK / ESSOS / PURPLE_PASSION / ROMANTIC ...
+```
+
+效果见 [多主题效果](#-多主题效果)。
+
+> 注意：pyecharts 默认的 CDN 目录是 `assets/v6/`，而该目录**缺少主题文件**（如 `themes/chalk.js` 返回 404），会导致主题**静默失效**（表现为透明背景 + ECharts 默认蓝）。脚本已通过 `CurrentConfig.ONLINE_HOST` 指向 `assets/v5/` 修复，**请勿删除该行**。
 </details>
 
 ---
