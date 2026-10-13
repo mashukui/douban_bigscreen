@@ -1,0 +1,8 @@
+* text=auto eol=lf
+
+# 生成物不计入语言统计，保证主语言为 Python
+*.html linguist-documentation
+
+*.xlsx binary
+*.png  binary
+*.xmind binary

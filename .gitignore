@@ -1,0 +1,53 @@
+# ===== macOS =====
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+
+# ===== 工具目录 =====
+.workbuddy/
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ===== 虚拟环境 =====
+.venv/
+venv/
+env/
+ENV/
+
+# ===== IDE / 编辑器 =====
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ===== 可再生的中间产物（每次运行脚本都会重新生成）=====
+大标题.html
+电影排名TOP10_数据表格.html
+电影名称_词云图.html
+评论数TOP10_条形图.html
+情感分布_饼图.html
+评价数分布-柱形图.html
+评分年份分布-散点图.html
+大屏_临时.html
+
+# ===== 2022 旧主题成品（旧版 CDN 路径已失效，不可复现）=====
+大屏_最终_CHALK.html
+大屏_最终_DARK.html
+大屏_最终_ESSOS.html
+大屏_最终_PURPLE.html
+大屏_最终_ROMANTIC.html
+
+# ===== 内部说明文件（不对外公开）=====
+说明.txt
