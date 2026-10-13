@@ -7,6 +7,7 @@
 [![SnowNLP](https://img.shields.io/badge/SnowNLP-0.12-orange.svg)](https://github.com/isnowfy/snownlp)
 [![jieba](https://img.shields.io/badge/jieba-0.42-green.svg)](https://github.com/fxsjy/jieba)
 [![MySQL](https://img.shields.io/badge/MySQL-8.x-4479A1.svg)](https://www.mysql.com/)
+[![Bilibili](https://img.shields.io/badge/Bilibili-%E8%A7%86%E9%A2%91%E8%AE%B2%E8%A7%A3-00A1D6.svg?logo=bilibili&logoColor=white)](https://www.bilibili.com/video/BV1Uu411k757/)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 ---
@@ -16,6 +17,16 @@
 本项目用 **requests + BeautifulSoup** 抓取豆瓣电影 TOP250 十页数据（每页 25 部，共 250 部），解析出 11 个字段并落地为 CSV 与 MySQL；再用 **SnowNLP** 对短评做情感三档判定、用 **jieba + 自定义停用词** 做电影名称词云；最后用 **pyecharts** 生成 7 个可视化组件，借助 `DraggablePageLayout` 拖拽排版 + `save_resize_html` 套版，产出**单文件 HTML 大屏**，浏览器打开即可查看。
 
 全链路三个脚本、一条命令跑通，代码 100% 原创。适合作为 **Python 爬虫 / 数据分析 / 数据可视化** 的练手项目或求职作品集。
+
+---
+
+## 🎬 视频讲解
+
+配套一支**全流程讲解视频**（B站，19 分 53 秒）：从爬虫采集、情感分析到拖拽排版，逐行拆解大屏背后的实现原理。
+
+[![点击封面观看完整讲解视频](screenshot/video-cover.jpg)](https://www.bilibili.com/video/BV1Uu411k757/)
+
+> 📺 **B站观看**：<https://www.bilibili.com/video/BV1Uu411k757/> （UP主：[@马哥python说](https://space.bilibili.com/438486155)）
 
 ---
 
@@ -132,6 +143,7 @@ douban_bigscreen/
 ├── index.html                       # GitHub Pages 入口（内容同大屏）
 ├── screenshot/
 │   ├── dashboard.png                # README 效果图（当前版式 + 最新数据）
+│   ├── video-cover.jpg              # README 视频讲解封面（点击跳转 B站）
 │   └── theme-*.png                  # README 主题效果图（5 种主题配色）
 ├── 基于Python的豆瓣电影舆情分析系统 可视化大屏设计方案.xmind   # 设计稿
 ├── 思维导图2.png                    # 设计稿导出图
@@ -335,6 +347,7 @@ theme_config = ThemeType.CHALK   # 换成 DARK / ESSOS / PURPLE_PASSION / ROMANT
 **我是马哥python说，一名10年+程序猿，专注python开发，持续分享python源码干货中。**
 
 - 公众号：[老男孩的平凡之路](https://github.com/mashukui/mashukui/blob/main/wechat2.png)
+- B站：[@马哥python说](https://space.bilibili.com/438486155)（[本项目讲解视频](https://www.bilibili.com/video/BV1Uu411k757/)）
 - GitHub：[@mashukui](https://github.com/mashukui)
 
 > 原创不易，如果本项目对你有帮助，欢迎 **Star ⭐** 支持一下。
